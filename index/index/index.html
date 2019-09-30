@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chachu-Bet </title>
+    <link a href="style.css" rel="stylesheet" type="text/css">
+
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+
+    <link href="http://www.clker.com/cliparts/d/5/5/3/1242257669472701825NYCS-bull-trans-C.svg.med.png" rel="icon"
+          type="image/x-icon"/>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!--ფონტები-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!--ფონტები-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--პოპაპი-->
+<div class="modal fade" id="popUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title"  id="satauri">Music for mood</h6>
+
+
+            </div>
+            <div class="modal-body">
+                <audio controls id="player">
+
+                    <source src="https://archive.org/download/PassThisOn/PassThisOn-TheKnife.mp3" type="audio/mpeg">
+
+                    <source src="https://download.mp3guru.icu/n/Jonathan-Bree-Youre-so-Cool.mp3" type="audio/mpeg">
+
+
+                </audio>
+
+                <audio controls id="player">
+
+                    <source src="https://download.mp3guru.icu/n/Jonathan-Bree-Youre-so-Cool.mp3" type="audio/mpeg">
+                </audio>
+
+
+
+            </div>
+            <div class="modal-footer">
+<h6 id="mname"> The Knife - 'Pass This On' </h6>
+                <h6 id="mname1"> Jonathan Bree - You're So Cool  </h6>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--პოპაპი-->
+
+
+
+
+
+<!--ბაცკგორუნდ ანიმატიონ-->
+  <div class="background">
+
+        <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none"
+           stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter"
+           stroke-miterlimit="10"
+           stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g fill="#eeeeee">
+                <path d="M143.19336,21.43001c-0.26705,0.00844 -0.53341,0.03181 -0.79785,0.06999h-34.89551c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h18.53256l-66.59961,66.59961c-1.8722,1.79752 -2.62637,4.46674 -1.97164,6.97823c0.65473,2.51149 2.61604,4.4728 5.12753,5.12753c2.51149,0.65473 5.18071,-0.09944 6.97823,-1.97165l66.59961,-66.59961v18.53255c-0.03655,2.58456 1.32136,4.98858 3.55376,6.29153c2.2324,1.30295 4.99342,1.30295 7.22582,0c2.2324,-1.30295 3.59031,-3.70697 3.55376,-6.29153v-34.9235c0.28889,-2.08845 -0.35639,-4.19816 -1.76411,-5.76769c-1.40772,-1.56953 -3.43507,-2.43964 -5.54253,-2.3788zM35.83333,21.5c-7.83362,0 -14.33333,6.49972 -14.33333,14.33333v100.33333c0,7.83362 6.49972,14.33333 14.33333,14.33333h100.33333c7.83362,0 14.33333,-6.49972 14.33333,-14.33333v-43c0.03655,-2.58456 -1.32136,-4.98858 -3.55376,-6.29153c-2.2324,-1.30295 -4.99342,-1.30295 -7.22582,0c-2.2324,1.30295 -3.59031,3.70697 -3.55376,6.29153v43h-100.33333v-100.33333h43c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376z"></path>
+            </g>
+        </g>
+        </svg></a></h3>
+
+    </div>
+<!--ბაცკგორუნდ ანიმატიონ!-->
+
+<!--სქროლბარი -->
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 50px #000000;
+            border-radius: 1000px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #110261;
+            background: linear-gradient(to bottom, #aa076b, #110261);
+            background: -webkit-linear-gradient(to bottom, #61045F, #aa076b);
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #110261;
+            background: linear-gradient(to bottom, #130266, #aa076b);
+            background: -webkit-linear-gradient(to bottom, #61045F, #aa076b);        }
+    </style>
+<!--სქროლბარი! -->
+
+<!--მენიუ-->
+    <div class="nav">
+        <nav>
+            <p>   </p>
+            <br>
+            <div class="live">
+                <ul>
+                    <li id="samorine"><a href=<#>  Live Casino </a>
+                        <ul class="pink">
+                            <br>
+                            <br>
+                            <br>
+                            <li><a href="#">BlackJack</a></li>
+                            <li><a href="#">Roulette</a></li>
+                            <li><a href="#"> Poker  </a></li>
+                            <li><a href="#">  Va-Bank </a></li>
+                            <li><a href="#">  Bakara   </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+
+    <div class="table">
+        <ul>
+            <li id="table"><a href=<"#"> Table Games </a>
+                <ul>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="http://localhost:63342/index/index/mjeraarmjera.html?_ijt=6rf9dna5rm4f0k96510r75bdg8">Trust
+                        or <br> No Trust </a></li>
+                    <li><a href="#">Dominnoes</a></li>
+                    <li><a href="#">Japanese Joker   </a></li>
+                    <li><a href="#">    Seka      </a></li>
+                    <li><a href="#">   Bura    </a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="slots">
+        <ul>
+            <li id="slots"><a href="#"> Slots </a>
+                <ul>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="#"> Smartsoft </a>
+                    <li><a href="#"> Netent   </a>
+                    <li><a href="#"> PlayNgo  </a>
+                    <li><a href="#"> Push gaming </a>
+                    <li><a href="#"> Igrosoft </a>
+                    <li><a href="#"> EGT  </a>
+                    <li><a href="#"> Red Rake </a>
+                    <li><a href="#"> Novomatic </a>
+                    <li><a href="#"> Spinomenal </a>
+                    <li><a href="#"> Pragmatic </a>
+                    <li><a href="#"> Yggdrasil </a>
+                    <li><a href="#"> Tom Horn </a>
+                    <li><a href="#"> Game Art   </a>
+                    <li><a href="#"> Big Time Gaming </a>
+                    <li><a href="#"> Endorphina </a>
+                    <li><a href="#"> Gamonator </a>
+                    <li><a href="#"> Novomatic </a>
+
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <br>
+
+
+    <div class="chachugames">
+        <ul>
+            <li id="chachugames"><a href=<"#">Thechachu Wheels </a>
+                <ul>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="chachuwheel.html">Yes or No Wheel </a></li>
+                    <li><a href="#"> Where To go Wheel </a></li>
+                    <li><a href="#">What to eat Wheel </a></li>
+                    <li><a href="#">What should i watch Wheel </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<!--მენიუ-->
+
+
+<!--მორბენალი სტრიქონი-->
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left" onMouseOut="this.start()" onMouseOver="this.stop()"
+                 scrollamount="10">
+            <h1 id="advantance">The #1 Casino All over this tab</h1></marquee>
+    </div>
+ <!--მორბენალი სტრიქონი-->
+
+
+<!--ნოუსქროლ-->
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+<!--ნოუსქროლ-->
+
+
+<!--პნგ იმაჯეს-->
+
+
+    <img id="cover"  src="../png/cover.jpg.">
+
+    <img id="logo" src="../png/logo.png">
+
+    <img id="moon" src="../png/moon.png">
+
+    <img id="moon1" src="../png/moon1.png">
+
+    <img id="slotmachine" src="../png/slotmachine.png" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+    <img id="gradient" src="../png/gradient.jpg"><br>
+
+    <img id="slotmachine1" src="../png/slotmachine1.png"> <br>
+
+    <img id="slotmachine2" src="../png/slotmachine2.png"> <br>
+<!--პნგ იმაჯეს-->
+
+
+
+<!--აღწერა-->
+    <div class="description">
+        <style>
+            #more {
+                display: none;
+            }
+        </style>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <p> A slot machine (American English), known variously as a fruit machine <br>(British English, except
+            Scotland),
+            puggy (Scottish English),[1] the slots <br>(Canadian and American English),<span id="dots">...</span><span
+                    id="more">, poker machine/pokies (Australian English<br> and New Zealand English), or simply slot (British English and American English),<br> is a casino gambling machine that creates a game of chance for its customers.<br>
+
+    Its standard layout is a display with three or more<br> reels which rotate when a lever is pulled<br> or button pushed. Slot machines are also known<br> pejoratively as one-armed bandits because they were <br>originally operated by pulling upon a large mechanical <br>lever on the side of the machine (as distinct from the modern <br>button on the front panel), and because of their ability to empty a player's<br> pockets and wallet as a thief would.[2] Many modern machines are still <br>equipped with a legacy lever in addition to the button.
+
+    Slot<br> machines include one or more currency detectors<br> that validate the form of payment, whether coin, cash, or token.<br> The machine pays off according to patterns of symbols appearing on its display<br> when it stops. Slot machines are the most popular<br> gambling method in casinos and constitute about 70 percent of<br> the average US casino's income.[3]
+
+    Digital technology has resulted in variations on the<br> original slot machine concept. Since the player is essentially playing a video game,<br> manufacturers are able to offer more interactive elements,<br> such as advanced bonus rounds and more varied video graphics.
+</span></p>
+        <button id="myBtn" onclick="myFunction()">Show more</button>
+
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Show more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Show less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+
+    </div>
+
+
+    <div class="description1">
+        <style>
+            #more1 {
+                display: none;
+            }
+        </style>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <p> Since the player is essentially playing a video game as a fruit machine <br>(British English, except
+            Scotland),
+            puggy (Scottish English),[1] the slots <br>(Canadian and American English),<span id="dots1">...</span><span
+                    id="more1">, poker machine/pokies (Australian English<br> and New Zeland English), or simply slot (British English and American English),<br> is a casino gambling machine that creates a game of chance for its customers.<br>
+
+    Its standard layout is a display with three or more<br> reels which rotate when a lever is pulled<br> or button pushed. Slot machines are also known<br> pejoratively as one-armed bandits because they were <br>originally operated by pulling upon a large mechanical <br>lever on the side of the machine (as distinct from the modern <br>button on the front panel), and because of their ability to empty a player's<br> pockets and wallet as a thief would. 2 Many modern machines are still <br>equipped with a legacy lever in addition to the button.
+
+    Slot<br> machines include one or more currency detectors<br> that validate the form of payment, whether coin, cash, or token.<br> The machine pays off according to patterns of symbols appearing on its display<br> when it stops. Slot machines are the most popular<br> gambling method in casinos and constitute about 70 percent of<br> the average US casino's income.3
+
+    Digital technology has resulted in variations on the<br> original slot machine concept. Since the player is essentially playing a video game,<br> manufacturers are able to offer more interactive elements,<br> such as advanced bonus rounds and more varied video graphics.
+</span></p>
+        <button id="myBtn1" onclick="myFunction1()">Show more</button>
+
+        <script>
+            function myFunction1() {
+                var dots = document.getElementById("dots1");
+                var moreText = document.getElementById("more1");
+                var btnText = document.getElementById("myBtn1");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Show more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Show less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+
+    </div>
+
+
+    <div class="description2">
+        <style>
+            #more2 {
+                display: none;
+            }
+        </style>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <p> Since the player is essentially playing a video game as a fruit machine <br>(British English, except
+            Scotland),
+            puggy (Scottish English),[1] the slots <br>(Canadian and American English),<span id="dots2">...</span><span
+                    id="more2">, poker machine/pokies (Australian English<br> and New Zeland English), or simply slot (British English and American English),<br> is a casino gambling machine that creates a game of chance for its customers.<br>
+
+    Its standard layout is a display with three or more<br> reels which rotate when a lever is pulled<br> or button pushed. Slot machines are also known<br> pejoratively as one-armed bandits because they were <br>originally operated by pulling upon a large mechanical <br>lever on the side of the machine (as distinct from the modern <br>button on the front panel), and because of their ability to empty a player's<br> pockets and wallet as a thief would.[2] Many modern machines are still <br>equipped with a legacy lever in addition to the button.
+
+    Slot<br> machines include one or more currency detectors<br> that validate the form of payment, whether coin, cash, or token.<br> The machine pays off according to patterns of symbols appearing on its display<br> when it stops. Slot machines are the most popular<br> gambling method in casinos and constitute about 70 percent of<br> the average US casino's income.[3]
+
+    Digital technology has resulted in variations on the<br> original slot machine concept. Since the player is essentially playing a video game,<br> manufacturers are able to offer more interactive elements,<br> such as advanced bonus rounds and more varied video graphics.
+</span></p>
+        <button id="myBtn2" onclick="myFunction2()">Show more</button>
+
+        <script>
+            function myFunction2() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more2");
+                var btnText = document.getElementById("myBtn2");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Show more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Show less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+    </div>
+<!--აღწერა-->
+
+
+
+
+<!--ფუტერი-->
+    <div class="footer">
+        <footer>
+
+            <hr class="new">
+
+
+        </footer>
+
+    </div>
+
+
+    <div class="footer1">
+
+
+        <div class="contact">
+            <p id="contact"><h6>Contact information:</h6> <a href="https://laschachu.do.am"> <br> +995-551-25-63-99 <br>I.chachua@example.com</a>.</p>
+        </div>
+
+
+        <p id="rights">© All RIGHTS RESERVED!</p>
+
+        <a href="https://www.twitter.com" target="_blank">
+            <img id="twitter" src="../png/twitter.png"/>
+
+            <a href="https://www.youtube.com" target="_blank">
+                <img id="youtube" src="../png/youtube.png"/>
+
+                <a href="https://www.in.com" target="_blank">
+                    <img id="in" src="../png/in.png"/>
+
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img id="facebook" src="../png/facebook.png"/>
+                    </a>
+
+    </div>
+</a>
+<!--ფუტერი-->
+
+
+
+
+<!--საიდბარი-->
+    <script type="text/javascript">
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+    </script>
+
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()"><a>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        </div>
+        <ul>
+
+            <button id="openmusic" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#popUp">Open Music</button>
+
+            <button id="openmusic1" type="button1" class="btn btn-info btn-lg" data-toggle="sidebar1" data-target="#popUp1">Open Slide </button>
+
+
+        </ul>
+    </div>
+</div>
+<!--საიდბარი-->
+
+
+
+
+<!--საიდბარი2-->
+
+<!--
+<script type="text/javascript">
+    function toggleSidebar1() {
+        document.getElementById("sidebar1").classList.toggle('active');
+    }
+</script>
+-->
+
+<div id="sidebar1">
+
+        <span><h1></h1></span>
+
+    </a>
+        <div id="border"></div>
+        <div id="wrapper">
+            <div class="carousel">
+                <marquee  scrollamount="20" onMouseOut="this.start()" onMouseOver="this.stop()" direction="right">
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                  <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                   <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softswiss.com/wp-content/uploads/2012/10/PLAYNGO_LOGO_RGB_PLACEONBLACK-1.png" width="160" height="80" alt="Natural" />
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />       <img src="https://www.softswiss.com/wp-content/uploads/2012/10/PLAYNGO_LOGO_RGB_PLACEONBLACK-1.png" width="160" height="80" alt="Natural" />
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />       <img src="https://www.softswiss.com/wp-content/uploads/2012/10/PLAYNGO_LOGO_RGB_PLACEONBLACK-1.png" width="160" height="80" alt="Natural" />
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />       <img src="https://www.softswiss.com/wp-content/uploads/2012/10/PLAYNGO_LOGO_RGB_PLACEONBLACK-1.png" width="160" height="80" alt="Natural" />
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />       <img src="https://www.softswiss.com/wp-content/uploads/2012/10/PLAYNGO_LOGO_RGB_PLACEONBLACK-1.png" width="160" height="80" alt="Natural" />
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softswiss.com/wp-content/uploads/2012/10/PLAYNGO_LOGO_RGB_PLACEONBLACK-1.png" width="160" height="80" alt="Natural" />
+                    <img src="https://www.fantinisgamingshow.com/media/adaptive-images/480/images/fl_items/files/20/original/42_novomatic-logokombi-mit-claim-hoch-rgb-1000x1000.png" width="120" height="80" alt="Natural" />
+                    <img src="https://freemyspins.com/wp-content/uploads/2019/03/push-gaming-casinos.png" width="100" height="60" alt="Natural" />
+                    <img src="https://media.licdn.com/dms/image/C560BAQEXF3k9MdpTNA/company-logo_200_200/0?e=2159024400&v=beta&t=r-rjC2_mXKkhmyEGTn4niIYjJCl5IprsLPoWuAec7fI" width="100" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/igrosoft.png" width="100" height="60" alt="Natural" />
+                    <img src="https://www.betchain.com/system/comfy/cms/files/files/000/001/082/original/egt-gaming-logo.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.softgamings.com/content/uploads/endorphina.png" width="120" height="60" alt="Natural" />
+                    <img src="https://www.spielhalle.net/bilder/2018/08/big-time-gaming-logo.png" width="100" height="60" alt="Natural" />
+
+                </marquee>
+
+
+            </div>
+        </div>
+    <div id="pager"></div>
+
+</div>
+<!--საიდბარი2-->
+
+
+
+
+
+
+
+<!--ბიბლიოთეკები-->
+<script src="jquery-3.4.1.js"></script>
+
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="main.js"></script>
+<!--ბიბლიოთეკები-->
+
+
+</body>
+
+</html>
+
+
